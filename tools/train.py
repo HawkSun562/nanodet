@@ -78,7 +78,7 @@ def main(args):
         batch_size=cfg.device.batchsize_per_gpu,
         shuffle=True,
         num_workers=cfg.device.workers_per_gpu,
-        pin_memory=True,
+        pin_memory=False,
         collate_fn=naive_collate,
         drop_last=True,
     )
@@ -87,7 +87,7 @@ def main(args):
         batch_size=cfg.device.batchsize_per_gpu,
         shuffle=False,
         num_workers=cfg.device.workers_per_gpu,
-        pin_memory=True,
+        pin_memory=False,
         collate_fn=naive_collate,
         drop_last=False,
     )

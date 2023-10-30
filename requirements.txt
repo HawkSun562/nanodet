@@ -3,8 +3,8 @@ matplotlib
 numpy
 omegaconf>=2.0.1
 onnx
-onnx-simplifier
-opencv-python
+onnx-simplifier==0.3.5
+opencv-python-headless
 pyaml
 pycocotools
 pytorch-lightning>=2.0.0
